@@ -54,7 +54,7 @@ const WeatherApp = () => {
         </div>
       </div>
       <div className="weather-app">
-        <h1 className="app-title">Professional Weather App</h1>
+        <h1 className="app-title">Professional Weathers App</h1>
         <form onSubmit={getWeather} className="weather-form">
           <input
             type="text"
