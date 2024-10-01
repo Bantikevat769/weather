@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #73C8A9, #373B44);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.city_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 150px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background: #F2F2F2;
+  border-radius: 10px;
+  justify-content: center; /* Align content horizontally inside the card */
+  align-items: center; /* Align content vertically inside the card */
+  cursor: pointer;
+  color: #05060a;
+  word-wrap: break-word;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card_container {
+  display: flex; 
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center cards horizontally */
+}
+
+.weather-details {
+  text-align: center; /* Center-align text for better readability */
+  margin: 20px 0; /* Add vertical spacing */
+  color: #ffffff; /* Change text color to white for contrast */
+}
+
+.city-name {
+  font-size: 2.5rem; /* Increase font size for prominence */
+  font-weight: 700; /* Make the city name bold */
+  margin-bottom: 10px; /* Space below city name */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.country-name {
+  font-size: 1.5rem; /* Slightly smaller than city name */
+  font-weight: 500; /* Medium weight */
+  margin-bottom: 5px; /* Space below country name */
+  color: #0e0909; /* Lighter shade for contrast */
+}
+
+.weather-date {
+  font-size: 1.2rem; /* Smaller than country name */
+  font-weight: 400; /* Regular weight */
+  color: #000000; /* Even lighter shade for date */
+}
+/* Individual card styles */
+.card_item {
+  /* margin: 10px; */
+  margin-right:150px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  background: #F2F2F2;
+  border-radius: 10px;
+  justify-content: center; /* Align content horizontally inside the card */
+  align-items: center; /* Align content vertically inside the card */
+  cursor: pointer;
+  color: #05060a;
+  word-wrap: break-word;
+  font-size: 13px;
+  text-align: center;
+}
+
+.weather-app-container {
+  width: 100%;
+  display: flex;
+  margin-left: 50px;
+  justify-content: right;
+  align-items: center;
+}
+
+.weather-app {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.weather-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.weather-button {
+  width: 25%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.weather-button:hover {
+  background-color: #63a4ff;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* Weather Card */
+.weather-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Icon */
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+  animation: rotate 2s infinite linear;
+}
+
+/* Weather Details */
+.weather-details {
+  text-align: left;
+}
+
+.weather-city {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.weather-info {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
